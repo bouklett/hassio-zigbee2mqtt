@@ -6,7 +6,7 @@ Add-on for running [zigbee2mqtt](https://github.com/Koenkk/zigbee2mqtt) in [Hass
 
 ### Installation
 
-- Add the [repository URL](https://github.com/danielwelch/hassio-zigbee2mqtt) in your **Hass.io > Add-on Store**
+- Add the [repository URL](https://github.com/bouklett/hassio-zigbee2mqtt) in your **Hass.io > Add-on Store**
 
 The repository includes two add-ons: zigbee2mqtt and zigbee2mqtt-edge. For a stable release that tracks the released versions of zigbee2mqtt, install zigbee2mqtt. zigbee2mqtt-edge tracks the dev branch of zigbee2mqtt, so you can install the edge version if there are features or fixes in the dev branch that are not yet released.
 
@@ -18,7 +18,7 @@ To configure this add-on, you must set the following parameters via the Hass.io 
 |---------|----|--------|-----------|
 |`data_path`|string|yes|Set this to the path you'd like the add-on to persist data. Must be within the `/share` directory. Defaults to `/share/zigbee2mqtt`.|
 |`homeassistant`|bool|yes|Set this to `true` if you want MQTT autodiscovery. See [Integrating with Home Assistant](https://github.com/Koenkk/zigbee2mqtt/wiki/Integrating-with-Home-Assistant) for details.|
-|`permit_join`|bool|yes|Recommended to leave this to `false` and use [runtime pairing](https://github.com/danielwelch/hassio-zigbee2mqtt#pairing). Set this to `true` when you setup new devices - make sure you set it back to `false` when done.|
+|`permit_join`|bool|yes|Recommended to leave this to `false` and use [runtime pairing](https://github.com/bouklett/hassio-zigbee2mqtt#pairing). Set this to `true` when you setup new devices - make sure you set it back to `false` when done.|
 |`mqtt_server`|string|yes|The MQTT server address. Make sure you include the protocol. Example: `mqtt://homeassistant`|
 |`mqtt_base_topic`|string|yes|Prefix for your MQTT topic|
 |`serial_port`|string|yes|Serial port for your CC2531 stick.|
@@ -134,11 +134,11 @@ To update the edge version of the add-on, you will need to uninstall and re-inst
 
 ### Issues
 
-If you find any issues with the addon, please check first the [issue tracker](https://github.com/danielwelch/hassio-zigbee2mqtt/issues).
+If you find any issues with the addon, please check first the [issue tracker](https://github.com/bouklett/hassio-zigbee2mqtt/issues).
 
 Feel free to create a PR for fixes and enhancements. 
 
 ## Credits
-- [danielwelch](https://github.com/danielwelch)
+- [bouklett](https://github.com/bouklett)
 - [ciotlosm](https://github.com/ciotlosm)
 - [Koenkk](https://github.com/Koenkk) for [zigbee2mqtt](https://github.com/Koenkk/zigbee2mqtt)
